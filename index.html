@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ん</title>
+</head>
+<body style="border: 0pt;background-color: aqua;">
+    <style>
+        button.atb {
+            width: 120px;
+            height: 60px;
+            color: rgb(0, 0, 0);
+            position: relative;
+            top: -40px;
+        }
+        button.utb {
+            position: relative;
+            top: 20px;
+            left: 260px;
+            width: 240px;
+            height: 120px;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    敵HP<h1 id="0.01mm"></h1>
+    所持ポイント<h1 id="0.02mm"></h1>
+    購入必要ポイント<h1 id="0.03mm"></h1>
+    <script src="main.js">
+    </script>
+      
+    <button onclick="anan()" class="utb">攻撃</button><br>
+    <button onclick="buyer()" class="atb" style="top: -120px;position: relative;">攻撃力Lv.<h4 id="200"></h4></button><button onclick="handredbuy(100)" class="atb" style="top: -103px;position: relative;">攻撃力*100</button><br>
+    <button onclick="upbuyer()" class="atb" style="top: -134px;position: relative;">金Lv.<h4 id="300"></h4></button><button onclick="handredupbuy(100)" class="atb" style="top: -117px;position: relative;">金*100</button><br>
+    <button onclick="upppbuyer()" class="atb" style="top: -148px;position: relative;">上昇Lv.<h4 id="400"></h4></button><button onclick="handredupppbuy(100)" class="atb" style="top: -131px;position: relative;">上昇*100</button><br>
+    <button onclick="handredbuy(document.getElementById('atp').value/10 * 10)" class="atb" style="top: -148px;position: relative;">攻撃力*<input type="number" id="atp"></input></button><br>
+    <button onclick="handredupbuy(document.getElementById('ptp').value/10 * 10)" class="atb" style="top: -148px;position: relative;">金*<input type="number" id="ptp"></input></button><br>
+    <button onclick="handredupppbuy(document.getElementById('utp').value/10 * 10)" class="atb" style="top: -148px;position: relative;">上昇*<input type="number" id="utp"></input></button>
+    <script>
+        document.getElementById("400").innerHTML = pppup+1;
+        document.getElementById("300").innerHTML = pppppp/100;
+        document.getElementById("200").innerHTML = playerpower+1;</script>
+</body>
+</html>
