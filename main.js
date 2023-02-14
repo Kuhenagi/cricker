@@ -51,7 +51,7 @@
         if(enemyhp-jsdoei<1)
         {
             playerpoint=playerpoint+ppppp;
-            ppppp=ppppp+pppppp;
+            ppppp=ppppp*pppppp/100;
             jsdoei=0;
             killenemy++;
             enemyhp=enemyhp+
