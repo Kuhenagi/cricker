@@ -8,23 +8,42 @@
     var pppppp=100;
     var killenemy=0;
     function handredbuy(xy){
-        for(let di=0;di<xy;di++)
-        buyer();
+        if(xy>0){
+            if(playerpoint+1 >0.5 * xy * (ppp + ppp + 100 * xy))
+            {
+                playerpoint = playerpoint - 0.5 * xy * (ppp + ppp + 100 * xy)
+                playerpower = playerpower + (xy)*(pppup+1);
+                ppp = ppp + xy * 100
+            }
+            document.getElementById("0.02mm").innerHTML = playerpoint;
+            document.getElementById("0.03mm").innerHTML = ppp;
+            document.getElementById("200").innerHTML = playerpower;
+            }
     }
     function handredupbuy(xy){
-        for(let di=0;di<xy;di++)
-        upbuyer()
+        if(xy>0){
+            if(playerpoint+1 >0.5 * xy * (ppp + ppp + 100 * xy))
+            {
+                playerpoint = playerpoint - 0.5 * xy * (ppp + ppp + 100 * xy)
+                pppppp = pppppp + (xy)*(pppup+1);
+                ppp = ppp + xy * 100
+            }
+            document.getElementById("0.02mm").innerHTML = playerpoint;
+            document.getElementById("0.03mm").innerHTML = pppppp;
+            document.getElementById("300").innerHTML = pppup/10*10;
+            }
     }
     function handredupppbuy(xy){
         if(xy>0){
-        if(playerpoint+1 >0.5 * xy * (pppup + pppup + xy + 1)*100)
+        if(playerpoint+1 >0.5 * xy * (ppp + ppp + 100 * xy))
         {
-            playerpoint = playerpoint - (0.5 * xy * (pppup + pppup + xy + 1)*100)
+            playerpoint = playerpoint - 0.5 * xy * (ppp + ppp + 100 * xy)
             pppup = pppup + xy;
+            ppp = ppp + xy * 100
         }
         document.getElementById("0.02mm").innerHTML = playerpoint;
         document.getElementById("0.03mm").innerHTML = ppp;
-        document.getElementById("400").innerHTML = pppup+1;
+        document.getElementById("400").innerHTML = pppup/10*10;
         }
     }
     function anan(){
