@@ -29,8 +29,8 @@
                 ppp = ppp + xy * 100
             }
             document.getElementById("0.02mm").innerHTML = playerpoint;
-            document.getElementById("0.03mm").innerHTML = pppppp;
-            document.getElementById("300").innerHTML = pppup/10*10;
+            document.getElementById("0.03mm").innerHTML = ppp;
+            document.getElementById("300").innerHTML = pppppp/100;
             }
     }
     function handredupppbuy(xy){
